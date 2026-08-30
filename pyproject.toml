@@ -1,0 +1,20 @@
+[project]
+name = "fastmcp-auth-entra-example"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Christian Knoblauch", email = "christian.knoblauch@gmx.de" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "dotenv>=0.9.9",
+    "fastmcp[azure]>=3.4.7",
+]
+
+[project.scripts]
+fastmcp-auth-entra-example = "fastmcp_auth_entra_example:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
